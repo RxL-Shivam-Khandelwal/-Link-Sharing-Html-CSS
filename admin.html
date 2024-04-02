@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>admin page</title>
+     <link rel="stylesheet" href="admin.css">
+     <link rel="stylesheet" href="Login.css">
+     <link rel="stylesheet" href="dash.css">
+</head>
+<style>
+    table {
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+    }
+    
+    td, th {
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 8px;
+    }
+    
+    tr:nth-child(even) {
+      background-color: #dddddd;
+    }
+    </style>
+<body>
+    <div class="navbar" style="justify-content: space-evenly;">
+        <div>
+            <a href="#" class="nav-link">
+                <h3>Link Sharing</h3>
+            </a>
+        </div>
+        <div class="search-container">
+            <span class="search-icon">&#128269;</span>
+            <input type="text" class="search-input" placeholder="Search...">
+            <span class="close-icon">&#10005;</span>
+        </div>
+        <div class="clogo">
+            <img src="/Img/chat-fill.svg" alt="" onclick="showCard(1)">
+            <img src="/Img/envelope.svg" alt="" onclick="showCard(2)">
+            <img src="/Img/link.svg" alt=""  id="showCardImage" onclick="showCard(3)">
+            <img src="/Img/file-earmark-fill.svg" alt="" onclick="showCard(4)">
+        </div>
+        <div class="dprofile">
+            <img src="/Img/person-fill.svg" alt="" style="height: 30px; width: 30px; padding-top: 6px;">
+            <div class="dropdown">
+                <button class="dropbtn nbtn">Dropdown
+                    <img src="/Img/caret-down-fill.svg" alt="">
+                </button>
+                <div class="dropdown-content">
+                    <a href="#">Profile</a>
+                    <a href="#">User</a>
+                    <a href="#">Topic</a>
+                    <a href="#">Post</a>
+                    <a href="#">Logout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+     <div class="border" >
+        <div class="heading">
+            <div class="leftU">
+                <h5>Users</h5>
+            </div>
+            <div class="rightU">
+                <div class="usertype">
+                        <select>
+                            <option value="" disabled selected>Serious</option>
+                            <option value="option1">Option 1</option>
+                            <option value="option2">Option 2</option>
+                            <option value="option3">Option 3</option>
+                        </select>  
+                    </div>
+                        <div class="search-container sc">
+                            <span class="search-icon">&#128269;</span>
+                            <input type="text" class="search-input" placeholder="Search...">
+                            <span class="close-icon">&#10005;</span>
+                        </div> 
+                    <div class="btn">
+                        <button class="chng">Search</button>
+                    </div>                                  
+            </div>
+        </div>
+        <div class="table1">
+    <table>
+        <tr>
+          <th>Id</th>
+          <th>Username</th>
+          <th>Email</th>
+          <th>firstname</th>
+          <th>Lastname</th>
+          <th>Active</th>
+          <th>Manage</th>
+        </tr>
+        <tr>
+            <td>Germany</td>
+          <td>Alfreds Futterkiste</td>
+          <td>Maria Anders</td>
+          <td>Germany</td>
+          <td>Germany</td>
+          <td>Germany</td>
+          <td>Germany</td>
+        </tr>
+        <tr>
+          <td>Centro comercial Moctezuma</td>
+          <td>Francisco Chang</td>
+          <td>Mexico</td>
+          <td>Germany</td>
+          <td>Germany</td>
+          <td>Germany</td>
+          <td>Germany</td>
+        </tr>
+        <tr>
+          <td>Germany</td>
+          <td>Ernst Handel</td>
+          <td>Roland Mendel</td>
+          <td>Austria</td>
+          <td>Germany</td>
+          <td>Germany</td>
+          <td>Germany</td>
+        </tr>
+        <tr>
+          <td>Germany</td>
+          <td>Island Trading</td>
+          <td>Helen Bennett</td>
+          <td>UK</td>
+          <td>Germany</td>
+          <td>Germany</td>
+          <td>Germany</td>
+        </tr>
+        <tr>
+          <td>Laughing Bacchus Winecellars</td>
+          <td>Yoshi Tannamuri</td>
+          <td>Canada</td>
+          <td>Germany</td>
+          <td>Germany</td>
+          <td>Germany</td>
+          <td>Germany</td>
+        </tr>
+        <tr>
+          <td>Magazzini Alimentari Riuniti</td>
+          <td>Giovanni Rovelli</td>
+          <td>Italy</td>
+          <td>Germany</td>
+          <td>Germany</td>
+          <td>Germany</td>
+          <td>Germany</td>
+        </tr>
+      </table>
+    </div>
+    </div>
+</body>
+</html>
